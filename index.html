@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Heatmap Test</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #heatmap, #source {
+            top: 0px;
+            left: 0px;
+            position: absolute;;
+            width: 1295px;
+            height: 2078px;
+        }
+        #heatmap {
+            z-index: 9999;
+            /*background: url(img/gamesgames.com.png);*/
+        }
+        #source {
+            z-index: 1;
+        }
+        #gen {
+            display: none;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <input type="button" id="gen" value="Generate random set" />
+
+    <div id="heatmap"></div>
+    <iframe id="source" src="http://www.gamesgames.com"></iframe>
+
+    <script src="heatmap.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
