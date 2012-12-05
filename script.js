@@ -7,7 +7,7 @@
 
     var heatmap = h337.create({
         "element" : document.getElementById("heatmap"), 
-        "radius"  : 15, 
+        "radius"  : 10, 
         "visible" : true
     });
 
