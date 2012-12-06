@@ -5,8 +5,18 @@
  */
 (function() {
 
+    var heatmapElement = document.getElementById('heatmap'),
+        iframeElement  = document.getElementById('source');
+
+    // Resize heatmap and iframe to use full browser width
+    var viewPortWidth  = window.innerWidth,     // window.innerWidth should work with most modern browsers
+        viewPortHeight = 2078;                  // Hardcoded for now, we have to figure out a way to find the height of the iframe's source
+
+    heatmapElement.style.width  = iframeElement.width  = viewPortWidth;
+    heatmapElement.style.height = iframeElement.height = viewPortHeight;
+
     var heatmap = h337.create({
-        "element" : document.getElementById("heatmap"), 
+        "element" : heatmapElement, 
         "radius"  : 10, 
         "visible" : true
     });
